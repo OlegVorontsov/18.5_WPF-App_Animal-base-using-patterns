@@ -6,17 +6,10 @@ using System.Threading.Tasks;
 
 namespace _18._5_ClassLibrary
 {
-    class Amphibian : IAnimal
+    public class Amphibian : Bird
     {
-        public string Name { get; set; }
-        public string Region { get; set; }
-        public string Weight { get; set; }
-
-        public Amphibian (string Name, string Region, string Weight)
+        public Amphibian(int ID, string Class, string Name, string Region, string Weight) : base(ID, Class, Name, Region, Weight)
         {
-            this.Name = Name;
-            this.Region = Region;
-            this.Weight = Weight;
         }
     }
 }

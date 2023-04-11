@@ -6,14 +6,18 @@ using System.Threading.Tasks;
 
 namespace _18._5_ClassLibrary
 {
-    class Unknown : IAnimal
+    public class Unknown : IAnimal
     {
+        public int ID { get; set; }
+        public string Class { get; set; }
         public string Name { get; set; }
         public string Region { get; set; }
         public string Weight { get; set; }
 
         public Unknown ()
         {
+            this.ID = 00;
+            this.Class = "undefined";
             this.Name = "undefined";
             this.Region = "undefined";
             this.Weight = "undefined";

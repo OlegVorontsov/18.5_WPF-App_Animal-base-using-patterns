@@ -55,10 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AnimalAddWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AnimalAddWindow.xaml.cs">
+      <DependentUpon>AnimalAddWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -93,6 +100,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\18.5_ClassLibrary\18.5_ClassLibrary.csproj">
+      <Project>{17c7d75d-1c15-4c2c-9852-f5f78c87f3a5}</Project>
+      <Name>18.5_ClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FilesClassLibrary\FilesClassLibrary.csproj">
+      <Project>{f08aa6fe-5a7a-4847-be6f-636dbd87eb0f}</Project>
+      <Name>FilesClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

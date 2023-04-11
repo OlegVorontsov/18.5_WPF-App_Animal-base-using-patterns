@@ -7,6 +7,47 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="animalList"
+                  Grid.Column="1"
+                  Margin="5"
+                  IsSynchronizedWithCurrentItem="True"
+                  SelectionMode="Single" 
+                  AutoGenerateColumns="False" 
+                  ItemsSource="{Binding}"
+                  IsReadOnly="False">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="animalId" 
+                                    Binding="{Binding ID, UpdateSourceTrigger=PropertyChanged}" 
+                                    Header="ID" 
+                                    IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="animalClass" 
+                                    Binding="{Binding Class, UpdateSourceTrigger=PropertyChanged}" 
+                                    Header="Вид"/>
+                <DataGridTextColumn x:Name="animalName" 
+                                    Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}" 
+                                    Header="Название"/>
+                <DataGridTextColumn x:Name="animalRegion" 
+                                    Binding="{Binding Region, UpdateSourceTrigger=PropertyChanged}" 
+                                    Header="Ареал"/>
+                <DataGridTextColumn x:Name="animalWeight" 
+                                    Binding="{Binding Weight, UpdateSourceTrigger=PropertyChanged}" 
+                                    Header="Вес, г"/>
+            </DataGrid.Columns>
+
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Добавить" Click="MenuItemAddAnimalClick"/>
+                    <MenuItem Header="Удалить" Click="MenuItemDeleteAnimalClick"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+
+        </DataGrid>
+
     </Grid>
 </Window>

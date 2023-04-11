@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.5_WPF App_Animal base us
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.5_ClassLibrary", "18.5_ClassLibrary\18.5_ClassLibrary.csproj", "{17C7D75D-1C15-4C2C-9852-F5F78C87F3A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilesClassLibrary", "FilesClassLibrary\FilesClassLibrary.csproj", "{F08AA6FE-5A7A-4847-BE6F-636DBD87EB0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{17C7D75D-1C15-4C2C-9852-F5F78C87F3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17C7D75D-1C15-4C2C-9852-F5F78C87F3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17C7D75D-1C15-4C2C-9852-F5F78C87F3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F08AA6FE-5A7A-4847-BE6F-636DBD87EB0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F08AA6FE-5A7A-4847-BE6F-636DBD87EB0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F08AA6FE-5A7A-4847-BE6F-636DBD87EB0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F08AA6FE-5A7A-4847-BE6F-636DBD87EB0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
