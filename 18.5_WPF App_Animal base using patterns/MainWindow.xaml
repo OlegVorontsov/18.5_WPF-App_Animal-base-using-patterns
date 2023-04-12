@@ -48,6 +48,19 @@
             </DataGrid.ContextMenu>
 
         </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Сохранить базу в фомате:" VerticalAlignment="Top"/>
+        
+        <Button x:Name="txtSaveBtn"
+            Content="TXT" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="75" Click="txtSaveBtn_Click"/>
+
+        <Button x:Name="docSaveBtn"
+            Content="DOC" HorizontalAlignment="Left" Margin="110,40,0,0" VerticalAlignment="Top" Width="75" Click="docSaveBtn_Click"/>
+
+        <Button x:Name="pdfSaveBtn"
+            Content="PDF" HorizontalAlignment="Left" Margin="210,40,0,0" VerticalAlignment="Top" Width="75" Click="pdfSaveBtn_Click"/>
+        
+        <Button x:Name="sqlSaveBtn"
+            Content="SQL Base" HorizontalAlignment="Left" Margin="310,40,0,0" VerticalAlignment="Top" Width="75" Click="sqlSaveBtn_Click"/>
 
     </Grid>
 </Window>

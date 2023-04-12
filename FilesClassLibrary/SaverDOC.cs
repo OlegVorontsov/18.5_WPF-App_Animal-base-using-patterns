@@ -8,14 +8,14 @@ using _18._5_ClassLibrary;
 
 namespace FilesClassLibrary
 {
-    public class SaverTXT : ISaveBase
+    public class SaverDOC : ISaveBase
     {
         private string nameOfFile;
         private string path;
-        public SaverTXT(string NameOfFile)
+        public SaverDOC(string NameOfFile)
         {
             this.nameOfFile = NameOfFile;
-            this.path = $"{NameOfFile}.txt";
+            this.path = $"{NameOfFile}.doc";
         }
 
         public void SaveBase(List<IAnimal> Base)
