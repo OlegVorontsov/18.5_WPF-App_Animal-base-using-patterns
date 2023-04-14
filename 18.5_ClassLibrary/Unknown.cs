@@ -6,21 +6,15 @@ using System.Threading.Tasks;
 
 namespace _18._5_ClassLibrary
 {
-    public class Unknown : IAnimal
+    public class Unknown : SomeAnimal
     {
-        public int ID { get; set; }
-        public string Class { get; set; }
-        public string Name { get; set; }
-        public string Region { get; set; }
-        public string Weight { get; set; }
-
-        public Unknown ()
+        public Unknown(int ID, string Class, string Name, string Region, string Weight) : base(ID, Class, Name, Region, Weight)
         {
-            this.ID = 00;
-            this.Class = "undefined";
-            this.Name = "undefined";
-            this.Region = "undefined";
-            this.Weight = "undefined";
+            ID = 0;
+            Class = "undefined";
+            Name = "undefined";
+            Region = "undefined";
+            Weight = "undefined";
         }
     }
 }

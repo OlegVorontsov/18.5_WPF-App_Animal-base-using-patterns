@@ -12,6 +12,6 @@ namespace _18._5_WPF_App_Animal_base_using_patterns
     {
         public AnimalContext() : base("DbConnection") { }
 
-        public DbSet<IAnimal> AnimalsBaseSql { get; set; }
+        public DbSet<SomeAnimal> AnimalsBaseSql { get; set; }
     }
 }

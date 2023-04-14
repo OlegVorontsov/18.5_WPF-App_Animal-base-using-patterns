@@ -18,7 +18,7 @@ namespace FilesClassLibrary
             this.path = $"{NameOfFile}.doc";
         }
 
-        public void SaveBase(List<IAnimal> Base)
+        public void SaveBase(List<SomeAnimal> Base)
         {
             if (File.Exists(path))
             {

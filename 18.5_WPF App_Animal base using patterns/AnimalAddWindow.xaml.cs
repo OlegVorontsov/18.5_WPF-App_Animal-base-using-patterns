@@ -20,7 +20,7 @@ namespace _18._5_WPF_App_Animal_base_using_patterns
         public AnimalAddWindow()
         { InitializeComponent(); }
 
-        public AnimalAddWindow(IAnimal addNew) : this()
+        public AnimalAddWindow(SomeAnimal addNew) : this()
         {
             cancelBtn.Click += delegate { this.DialogResult = false; };
             okBtn.Click += delegate

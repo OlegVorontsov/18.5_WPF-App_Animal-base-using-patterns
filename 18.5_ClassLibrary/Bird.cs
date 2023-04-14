@@ -6,35 +6,10 @@ using System.Threading.Tasks;
 
 namespace _18._5_ClassLibrary
 {
-    public class Bird : IAnimal
+    public class Bird : SomeAnimal
     {
-        public int ID { get; set; }
-        public string Class { get; set; }
-        public string Name { get; set; }
-        public string Region { get; set; }
-        public string Weight { get; set; }
-
-        private static Random rand;
-        private static int randomID()
+        public Bird(int ID, string Class, string Name, string Region, string Weight) : base(ID, Class, Name, Region, Weight)
         {
-            return rand.Next(99);
-        }
-
-        public Bird(int ID, string Class, string Name, string Region, string Weight)
-        {
-            rand = new Random();
-            if (ID == 0)
-            {
-                this.ID = randomID();
-            }
-            else
-            {
-                this.ID = ID;
-            }
-            this.Class = Class;
-            this.Name = Name;
-            this.Region = Region;
-            this.Weight = Weight;
         }
     }
 }

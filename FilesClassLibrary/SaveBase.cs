@@ -9,6 +9,6 @@ namespace FilesClassLibrary
 {
     public interface ISaveBase
     {
-        void SaveBase(List<IAnimal> Base);
+        void SaveBase(List<SomeAnimal> Base);
     }
 }

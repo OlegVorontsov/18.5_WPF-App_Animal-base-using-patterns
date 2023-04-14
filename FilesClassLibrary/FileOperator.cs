@@ -11,14 +11,14 @@ namespace FilesClassLibrary
     public class FileOperator
     {
         protected static string fileName;
-        protected List<IAnimal> animalBase = new List<IAnimal>();
+        protected List<SomeAnimal> animalBase = new List<SomeAnimal>();
 
         public FileOperator(string FileName)
         {
             fileName = FileName;
         }
 
-        public List<IAnimal> GetBaseFromFile()
+        public List<SomeAnimal> GetBaseFromFile()
         {
             animalBase.Clear();
 
@@ -32,14 +32,14 @@ namespace FilesClassLibrary
                         case "Bird": animalBase.Add(new Bird(int.Parse(args[0]), args[1], args[2], args[3], args[4])); break;
                         case "Amphibian": animalBase.Add(new Amphibian(int.Parse(args[0]), args[1], args[2], args[3], args[4])); break;
                         case "Mammal": animalBase.Add(new Mammal(int.Parse(args[0]), args[1], args[2], args[3], args[4])); break;
-                        default: animalBase.Add(new Unknown()); break;
+                        default: animalBase.Add(new Unknown(int.Parse(args[0]), args[1], args[2], args[3], args[4])); break;
                     }
                 }
             }
             return animalBase;
         }
 
-        public void PutBaseIntoFile(List<IAnimal> Base)
+        public void PutBaseIntoFile(List<SomeAnimal> Base)
         {
             File.Delete($"{fileName}.txt");
             File.Create($"{fileName}.txt").Close();

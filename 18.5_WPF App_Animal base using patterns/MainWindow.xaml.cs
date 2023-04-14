@@ -35,7 +35,7 @@ namespace _18._5_WPF_App_Animal_base_using_patterns
         //добавление животного через контекстное меню
         private void MenuItemAddAnimalClick(object sender, RoutedEventArgs e)
         {
-            IAnimal add = AnimalFactory.GetAnimal(0, "Bird", "Name", "Region", "Weight");
+            SomeAnimal add = AnimalFactory.GetAnimal(0, "Bird", "Name", "Region", "Weight");
             AnimalAddWindow addWind = new AnimalAddWindow(add);
             addWind.ShowDialog();
             if (addWind.DialogResult.Value)
@@ -49,7 +49,7 @@ namespace _18._5_WPF_App_Animal_base_using_patterns
         //удаление животного через контекстное меню
         private void MenuItemDeleteAnimalClick(object sender, RoutedEventArgs e)
         {
-            IAnimal animalSelected = (IAnimal)animalList.SelectedItem;
+            SomeAnimal animalSelected = (SomeAnimal)animalList.SelectedItem;
             data.Animals.Remove(animalSelected);
             data.fileOper.PutBaseIntoFile(data.Animals);
             animalList.Items.Refresh();

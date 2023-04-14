@@ -10,12 +10,12 @@ namespace FilesClassLibrary
     public class BaseSaver
     {
         public ISaveBase Mode { get; set; }
-        public List<IAnimal> Base { get; set; }
+        public List<SomeAnimal> Base { get; set; }
         public BaseSaver()
         {
             //this.Mode = FileFormat;
         }
-        public void Save(List<IAnimal> BaseToSave, ISaveBase FileFormat)
+        public void Save(List<SomeAnimal> BaseToSave, ISaveBase FileFormat)
         {
             this.Mode = FileFormat;
             this.Base = BaseToSave;

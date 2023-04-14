@@ -9,7 +9,7 @@ namespace FilesClassLibrary
 {
     public class Repository
     {
-        public List<IAnimal> Animals;
+        public List<SomeAnimal> Animals;
         protected static string baseName;
         public FileOperator fileOper;
 
@@ -25,7 +25,7 @@ namespace FilesClassLibrary
             return new Repository(Name);
         }
 
-        public void AddAnimal(IAnimal Animal)
+        public void AddAnimal(SomeAnimal Animal)
         {
             Animals.Add(Animal);
         }

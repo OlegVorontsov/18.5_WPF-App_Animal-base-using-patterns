@@ -19,7 +19,7 @@ namespace FilesClassLibrary
             this.path = $"{NameOfFile}.pdf";
         }
 
-        public void SaveBase(List<IAnimal> Base)
+        public void SaveBase(List<SomeAnimal> Base)
         {
             if (File.Exists(path))
             {
